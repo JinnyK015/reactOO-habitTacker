@@ -1,8 +1,13 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap);
+
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:  "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +16,106 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+
+.habitTracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habits {
+  text-align: center;
+}
+.habits .habit-add {
+  margin: 0 auto;
+}
+.habits ul {
+  text-align: left;
+}
+
+.habit {
+  font-size: 2rem;
+  padding: 0.5em;
+  list-style: none;
+}
+
+.total_habits,
+.habit-count {
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  margin-left: 0.2em;
+  margin-right: 0.5em;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 50%;
+}
+
+.habit-button {
+  font-size: 2.5rem;
+  margin: 0 0.1em;
+  background-color: transparent;
+}
+
+.habit-button:hover {
+  opacity: 0.8;
+}
+
+.habit-plus,
+.habit-minus {
+  color: goldenrod;
+}
+
+.habit-trash {
+  font-size: 2.2rem;
+  color: darkred;
+}
+
+.habit-edit {
+  color: seagreen;
+}
+
+.navbar {
+  padding: 1rem;
+}
+.navbar .habit_title {
+  font-size: 2.5rem;
+}
+.navbar .total_habits {
+  background-color: darkolivegreen;
+}
+
+.habit_add,
+.habit-editform {
+  display: inline-block;
+}
+.habit_add input,
+.habit-editform input {
+  height: 2.5rem;
+  font-size: 2rem;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.habit-reset,
+.habbit_add_btn {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+}
+
+.habbit_add_btn {
+  margin-left: 1rem;
+}
+
